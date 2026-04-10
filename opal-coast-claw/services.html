@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Opal Coast Claw - BIAB Specialist</title>
+    <meta name="description" content="Detailed services at Opal Coast Claw - BIAB Full Set, BIAB Infill, Nail Art, and more. Premium nail services in Sentul City, Bogor.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'opal-white': '#F8F6F3',
+                        'opal-cream': '#F5F0EB',
+                        'dusty-rose': '#D4A5A5',
+                        'dusty-rose-light': '#E8C4C4',
+                        'lavender': '#C8B8DB',
+                        'lavender-light': '#DDD4E8',
+                        'gold': '#D4AF37',
+                        'gold-light': '#E8D5A3',
+                        'charcoal': '#4A4A4A',
+                        'warm-gray': '#8B8680'
+                    },
+                    fontFamily: {
+                        'serif': ['Cormorant Garamond', 'serif'],
+                        'sans': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .gradient-opal {
+            background: linear-gradient(135deg, #F8F6F3 0%, #F5F0EB 25%, #DDD4E8 50%, #E8C4C4 75%, #F8F6F3 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .btn-gold {
+            background: linear-gradient(135deg, #D4AF37 0%, #E8D5A3 50%, #D4AF37 100%);
+            background-size: 200% 200%;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-gold:hover {
+            background-position: 100% 100%;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        }
+        
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.15);
+        }
+        
+        .service-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #F8F6F3;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #D4A5A5;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="font-sans text-charcoal bg-opal-white smooth-scroll">
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-opal-white/95 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-2">
+                    <span class="font-serif text-2xl sm:text-3xl text-charcoal tracking-wide">Opal Coast Claw</span>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-warm-gray hover:text-dusty-rose transition-colors text-sm font-medium">Home</a>
+                    <a href="about.html" class="text-warm-gray hover:text-dusty-rose transition-colors text-sm font-medium">About</a>
+                    <a href="services.html" class="text-dusty-rose font-medium text-sm">Services</a>
+                    <a href="pricing.html" class="text-warm-gray hover:text-dusty-rose transition-colors text-sm font-medium">Pricing</a>
+                    <a href="faq.html" class="text-warm-gray hover:text-dusty-rose transition-colors text-sm font-medium">FAQ</a>
+                    <a href="contact.html" class="text-warm-gray hover:text-dusty-rose transition-colors text-sm font-medium">Contact</a>
+                    <a href="https://wa.me/6282113537376" target="_blank" class="btn-gold text-white px-6 py-2.5 rounded-full text-sm font-medium">Book Now</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-charcoal">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-opal-white border-t border-lavender-light">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-charcoal hover:text-dusty-rose">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-charcoal hover:text-dusty-rose">About</a>
+                <a href="services.html" class="block px-3 py-2 text-dusty-rose font-medium">Services</a>
+                <a href="pricing.html" class="block px-3 py-2 text-charcoal hover:text-dusty-rose">Pricing</a>
+                <a href="faq.html" class="block px-3 py-2 text-charcoal hover:text-dusty-rose">FAQ</a>
+                <a href="contact.html" class="block px-3 py-2 text-charcoal hover:text-dusty-rose">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 sm:pt-40 sm:pb-24 gradient-opal relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-opal-white/20 to-opal-white/80"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-dusty-rose text-sm tracking-widest uppercase font-medium mb-4 block" data-aos="fade-down">What We Offer</span>
+            <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-charcoal mb-6 leading-tight" data-aos="zoom-in">
+                Our Services
+            </h1>
+            <p class="text-warm-gray text-lg max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                Premium BIAB nail services tailored to your style. Each treatment is crafted with precision and care in our cozy Sentul studio.
+            </p>
+        </div>
+    </section>
+    
+    <!-- BIAB Explainer Section -->
+    <section class="py-16 sm:py-24 bg-opal-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-xl" data-aos="fade-up">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="w-24 h-24 bg-gradient-to-br from-dusty-rose to-lavender rounded-full flex items-center justify-center flex-shrink-0">
+                        <i data-lucide="sparkles" class="w-12 h-12 text-white"></i>
+                    </div>
+                    <div>
+                        <h2 class="font-serif text-3xl sm:text-4xl text-charcoal mb-4">What is BIAB?</h2>
+                        <p class="text-warm-gray leading-relaxed mb-4">
+                            <strong>BIAB (Builder In A Bottle)</strong> is a revolutionary gel system that creates a strong, flexible overlay on your natural nails. Unlike regular gel polish, BIAB adds structure and protection, helping your nails grow longer and healthier.
+                        </p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-lavender-light text-dusty-rose px-4 py-2 rounded-full text-sm">💪 Stronger than gel</span>
+                            <span class="bg-lavender-light text-dusty-rose px-4 py-2 rounded-full text-sm">🌱 Helps nail growth</span>
+                            <span class="bg-lavender-light text-dusty-rose px-4 py-2 rounded-full text-sm">⏰ Lasts 3-4 weeks</span>
+                            <span class="bg-lavender-light text-dusty-rose px-4 py-2 rounded-full text-sm">✨ Minimal chipping</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Grid -->
+    <section class="py-16 sm:py-24 bg-opal-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-dusty-rose text-sm tracking-widest uppercase font-medium mb-4 block">Our Menu</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-charcoal mb-4">Premium Treatments</h2>
+                <p class="text-warm-gray">Choose from our curated selection of BIAB services and nail art options</p>
+            </div>
+            
+            <!-- Service Cards -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1: BIAB Full Set -->
+                <div class="service-card bg-white rounded-2xl overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80" alt="BIAB Full Set" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="service-icon w-12 h-12 bg-gradient-to-br from-dusty-rose to-dusty-rose-light rounded-lg flex items-center justify-center mb-4">
+                            <i data-lucide="layers" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <h3 class="font-serif text-xl text-charcoal mb-2">BIAB Full Set</h3>
+                        <p class="text-sm text-warm-gray mb-4">Complete BIAB overlay on natural nails with your choice of color. Includes nail prep, BIAB application, and glossy finish.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gold font-semibold">From Rp 350K</span>
+                            <a href="https://wa.me/6282113537376?text=Hi, I'd like to book BIAB Full Set" target="_blank" class="text-dusty-rose text-sm hover:underline">Book →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 2: BIAB Infill -->
+                <div class="service-card bg-white rounded-2xl overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1610992015732-2449b0dd2b7f?w=600&q=80" alt="BIAB Infill" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="service-icon w-12 h-12 bg-gradient-to-br from-lavender to-lavender-light rounded-lg flex items-center justify-center mb-4">
+                            <i data-lucide="refresh-cw" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <h3 class="font-serif text-xl text-charcoal mb-2">BIAB Infill</h3>
+                        <p class="text-sm text-warm-gray mb-4">Refresh your existing BIAB nails with new growth coverage. Perfect maintenance between full sets.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gold font-semibold">From Rp 280K</span>
+                            <a href="https://wa.me/6282113537376?text=Hi, I'd like to book BIAB Infill" target="_blank" class="text-dusty-rose text-sm hover:underline">Book →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 3: French BIAB -->
+                <div class="service-card bg-white rounded-2xl overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1631730359585-38a4935cbec4?w=600&q=80" alt="French BIAB" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="service-icon w-12 h-12 bg-gradient-to-br from-gold to-gold-light rounded-lg flex items-center justify-center mb-4">
+                            <i data-lucide="heart" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <h3 class="font-serif text-xl text-charcoal mb-2">French BIAB</h3>
+                        <p class="text-sm text-warm-gray mb-4">Classic French tips with the strength of BIAB. Timeless elegance that lasts weeks without chipping.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gold font-semibold">From Rp 400K</span>
+                            <a href="https://wa.me/6282113537376?text=Hi, I'd like to book French BIAB" target="_blank" class="text-dusty-rose text-sm hover:underline">Book →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 4: Nail Art Add-on -->
+                <div class="service-card bg-white rounded-2xl overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80" alt="Nail Art" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="service-icon w-12 h-12 bg-gradient-to-br from-dusty-rose to-lavender rounded-lg flex items-center justify-center mb-4">
+                            <i data-lucide="palette" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <h3 class="font-serif text-xl text-charcoal mb-2">Nail Art Add-on</h3>
+                        <p class="text-sm text-warm-gray mb-4">Express your style with custom designs. Options: French tips, chrome, glitter, minimalist lines, florals, and more.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gold font-semibold">From Rp 50K/nail</span>
+                            <a href="https://wa.me/6282113537376?text=Hi, I'd like to add nail art" target="_blank" class="text-dusty-rose text-sm hover:underline">Book →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 5: BIAB Removal -->
+                <div class="service-card bg-white rounded-2xl overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1623091410901-191e2cf0bece?w=600&q=80" alt="BIAB Removal" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="service-icon w-12 h-12 bg-gradient-to-br from-warm-gray to-charcoal rounded-lg flex items-center justify-center mb-4">
+                            <i data-lucide="scissors" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <h3 class="font-serif text-xl text-charcoal mb-2">BIAB Removal</h3>
+                        <p class="text-sm text-warm-gray mb-4">Safe, gentle removal of BIAB product without damaging natural nails. Includes nail conditioning treatment.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gold font-semibold">Rp 100K</span>
+                            <a href="https://wa.me/6282113537376?text=Hi, I'd like to book BIAB Removal" target="_blank" class="text-dusty-rose text-sm hover:underline">Book →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 6: Manicure Treatment -->
+                <div class="service-card bg-white rounded-2xl overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=600&q=80" alt="Manicure" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="service-icon w-12 h-12 bg-gradient-to-br from-lavender to-dusty-rose rounded-lg flex items-center justify-center mb-4">
+                            <i data-lucide="hand" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <h3 class="font-serif text-xl text-charcoal mb-2">Spa Manicure</h3>
+                        <p class="text-sm text-warm-gray mb-4">Relaxing hand treatment with cuticle care, nail shaping, and hydrating massage. Perfect prep before BIAB.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gold font-semibold">Rp 150K</span>
+                            <a href="https://wa.me/6282113537376?text=Hi, I'd like to book Spa Manicure" target="_blank" class="text-dusty-rose text-sm hover:underline">Book →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Process Section -->
+    <section class="py-16 sm:py-24 bg-opal-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-dusty-rose text-sm tracking-widest uppercase font-medium mb-4 block">How It Works</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-charcoal mb-4">Your BIAB Journey</h2>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-dusty-rose to-dusty-rose-light rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-serif text-2xl">1</span>
+                    </div>
+                    <h3 class="font-medium text-charcoal mb-2">Consultation</h3>
+                    <p class="text-sm text-warm-gray">Discuss your nail goals and choose your perfect BIAB style</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-gradient-to-br from-lavender to-lavender-light rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-serif text-2xl">2</span>
+                    </div>
+                    <h3 class="font-medium text-charcoal mb-2">Prep & Care</h3>
+                    <p class="text-sm text-warm-gray">Gentle nail prep and cuticle care for healthy foundation</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-gold to-gold-light rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-serif text-2xl">3</span>
+                    </div>
+                    <h3 class="font-medium text-charcoal mb-2">BIAB Application</h3>
+                    <p class="text-sm text-warm-gray">Precise BIAB layering with your chosen color or art</p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 bg-gradient-to-br from-dusty-rose to-lavender rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-serif text-2xl">4</span>
+                    </div>
+                    <h3 class="font-medium text-charcoal mb-2">Perfect Finish</h3>
+                    <p class="text-sm text-warm-gray">Glossy top coat and cuticle oil for lasting shine</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="py-16 sm:py-24 bg-charcoal text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1610992015732-2449b0dd2b7f?w=1920&q=80')] bg-cover bg-center opacity-10"></div>
+        
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl mb-6">Ready to Transform Your Nails?</h2>
+            <p class="text-gray-300 mb-8 text-lg">Book your BIAB appointment today and experience the difference of professional builder gel nails.</p>
+            <a href="https://wa.me/6282113537376" target="_blank" class="inline-flex items-center space-x-3 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full text-lg font-medium transition-all shadow-lg hover:shadow-green-500/30">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                <span>Book via WhatsApp</span>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-opal-white border-t border-lavender-light py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <h3 class="font-serif text-2xl text-charcoal mb-2">Opal Coast Claw</h3>
+                    <p class="text-warm-gray text-sm mb-4">Specialist in BIAB Service</p>
+                </div>
+                <div>
+                    <h4 class="font-medium text-charcoal mb-4 text-sm">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="text-warm-gray hover:text-dusty-rose transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-warm-gray hover:text-dusty-rose transition-colors">About</a></li>
+                        <li><a href="services.html" class="text-warm-gray hover:text-dusty-rose transition-colors">Services</a></li>
+                        <li><a href="pricing.html" class="text-warm-gray hover:text-dusty-rose transition-colors">Pricing</a></li>
+                        <li><a href="contact.html" class="text-warm-gray hover:text-dusty-rose transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-medium text-charcoal mb-4 text-sm">Connect</h4>
+                    <div class="flex space-x-3">
+                        <a href="https://www.instagram.com/opalcoastclaw/" target="_blank" class="w-10 h-10 bg-lavender-light rounded-full flex items-center justify-center text-dusty-rose hover:bg-dusty-rose hover:text-white transition-all">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/6282113537376" target="_blank" class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 hover:bg-green-500 hover:text-white transition-all">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                        </a>
+                        <a href="https://maps.app.goo.gl/Q3EYnYbfufsNitG46" target="_blank" class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-500 hover:text-white transition-all">
+                            <i data-lucide="map-pin" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-lavender-light flex flex-col sm:flex-row justify-between items-center">
+                <p class="text-warm-gray text-xs">© 2025 Opal Coast Claw. All rights reserved.</p>
+                <p class="text-warm-gray text-xs">Sentul City, Bogor, Indonesia</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6282113537376" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 floating-wa bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group flex items-center space-x-2">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 whitespace-nowrap text-sm font-medium">Chat to Book</span>
+    </a>
+    
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        lucide.createIcons();
+        AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true, offset: 50 });
+        
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    </script>
+</body>
+</html>
